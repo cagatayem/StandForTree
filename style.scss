@@ -95,3 +95,37 @@
         display: none;
     }
   }
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #0c5c2c;
+    padding: 2rem 3rem;
+    color: #fff;
+    &__text{
+        letter-spacing: 0.3rem;
+        font-size: 2.2rem;
+    }
+}
+
+.showcase{
+    text-align: center;
+    padding: 0.3rem 3rem;
+}
+
+.counters{
+   
+    
+}
+.paragraph{
+    &-primary{
+      font-size: 1.2rem;
+        
+    }
+}
+
