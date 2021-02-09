@@ -6,5 +6,6 @@ I have copied the text from internet. I did't want to spent time with it since t
 
 Text references:
 
-https://www.globalcitizen.org/en/partners/stand-for-trees/
+https://www.globalcitizen.org/en/partners/stand-for-trees
+
 https://www.theworldcounts.com/challenges/planet-earth/forests-and-deserts/rate-of-deforestation/story
