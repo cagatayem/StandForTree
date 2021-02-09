@@ -15,7 +15,8 @@
     width: 70%;
     background: linear-gradient(to left bottom, rgba(255, 255, 250, 0.5), rgba(255, 255, 255, 0.4));
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
-    z-index: 100; }
+    z-index: 100;
+    border-radius: 44px; }
 
 .images {
   display: flex;
@@ -69,16 +70,20 @@
   margin-bottom: 1rem;
   width: 100%;
   height: 5rem;
-  background-color: #0c5c2c;
   padding: 2rem 3rem;
   color: #fff; }
   .header__text {
     letter-spacing: 0.3rem;
     font-size: 2.2rem; }
+  .header--green {
+    background-color: #0c5c2c; }
+  .header--yellow {
+    background-color: #c27e25; }
+  .header--red {
+    background-color: #7a1f1f; }
 
 .showcase {
   text-align: center;
   padding: 0.3rem 3rem; }
-
-.paragraph-primary {
-  font-size: 1.2rem; }
+  .showcase__paragraph {
+    font-size: 1.2rem; }

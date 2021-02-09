@@ -34,9 +34,10 @@ const ClickNext = () => {
     for(let i = 0; i < allLeaf.length ;i++){
         if(counter === 1 ){
             allLeaf[i].src= "images/leaf-second.png"
-        }else(
+        }
+        if(counter ===2){
             allLeaf[i].src= "images/leaf-third.png"
-        )
+        }
     }
 }
 
@@ -45,7 +46,8 @@ const ClickPrev = () => {
     for(let i = 0; i < allLeaf.length ;i++){
         if(counter === 1 ){
             allLeaf[i].src= "images/leaf-second.png"
-        }else{
+        }
+        if(counter === 0){
             allLeaf[i].src= "images/leaf.png"
         }
     }

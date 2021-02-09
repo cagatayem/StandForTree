@@ -18,6 +18,7 @@
         background:linear-gradient(to left bottom,rgba(255,255,250,0.5), rgba(255,255,255,0.4));
         box-shadow: 0 10px 30px -10px rgba(0,0,0,.6);
         z-index: 100;
+        border-radius: 44px;
     }
 }
 
@@ -89,11 +90,13 @@
     &-container{
         width: 100%;
         height: 80vh;    
+
     }
 
     &-scrollbar{
         display: none;
     }
+
   }
 
 
@@ -104,28 +107,30 @@
     margin-bottom: 1rem;
     width: 100%;
     height: 5rem;
-    background-color: #0c5c2c;
+   
     padding: 2rem 3rem;
     color: #fff;
     &__text{
         letter-spacing: 0.3rem;
         font-size: 2.2rem;
     }
+    &--green{
+        background-color: #0c5c2c;
+    }
+    &--yellow{
+        background-color: #c27e25;
+    }
+    &--red{
+        background-color: #7a1f1f;
+    }
 }
 
 .showcase{
     text-align: center;
     padding: 0.3rem 3rem;
+    &__paragraph{
+        font-size: 1.2rem;
+     }
 }
 
-.counters{
-   
-    
-}
-.paragraph{
-    &-primary{
-      font-size: 1.2rem;
-        
-    }
-}
 
