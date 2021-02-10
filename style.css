@@ -87,3 +87,36 @@
   padding: 0.3rem 3rem; }
   .showcase__paragraph {
     font-size: 1.2rem; }
+  .showcase__questions {
+    display: flex;
+    margin-top: 2rem;
+    padding: 1rem; }
+  .showcase__question {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+
+.question {
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: 3px solid #0c5c2c;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .question:hover {
+    background: #0c5c2c;
+    color: #fff;
+    transition: 0.5s ease-out; }
+
+.answer {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: none; }

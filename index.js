@@ -16,7 +16,7 @@ var mySwiper = new Swiper('.swiper-container', {
     
 });
 
-
+   // LEAVES COLOR
 let counter =0  
 const allLeaf = document.querySelectorAll("img.images__leaf");
 const buttonNext = document.querySelector(".swiper-button-next").addEventListener("click", () =>{
@@ -52,4 +52,27 @@ const ClickPrev = () => {
         }
     }
 }
+
+
+ // ANSWER DISPLAY
+
+
+const answer = document.querySelectorAll(".answer")
+
+const questions = document.querySelectorAll(".question")
+
+for(let i=0; i<questions.length; i++){
+    questions[i].addEventListener("mouseover", ()=>{
+        for(let k=0; k<answer.length; k++){
+            answer[i].style.display="block"
+        }
+      
+    })
+    questions[i].addEventListener("mouseout", ()=>{
+        for(let k=0; k<answer.length; k++){
+            answer[i].style.display="none"
+        }
+    })
+}
+
 
