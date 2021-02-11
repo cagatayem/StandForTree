@@ -63,16 +63,31 @@ const questions = document.querySelectorAll(".question")
 
 for(let i=0; i<questions.length; i++){
     questions[i].addEventListener("mouseover", ()=>{
-        for(let k=0; k<answer.length; k++){
-            answer[i].style.display="block"
-        }
+        answer[i].style.display="block"
+        
       
     })
     questions[i].addEventListener("mouseout", ()=>{
-        for(let k=0; k<answer.length; k++){
-            answer[i].style.display="none"
-        }
+        answer[i].style.display="none"
+        
     })
 }
+
+ // TREE DISPLAY
+
+ const text = document.querySelectorAll(".showcase__text")
+ const tree= document.querySelectorAll(".showcase__text-tree")
+
+ for(let i=0; i<text.length ; i++){
+     text[i].addEventListener("mouseover", ()=>{
+        tree[i].classList.add("showcase__text-tree--animation")
+         
+     })
+     
+     text[i].addEventListener("mouseout", ()=>{
+        tree[i].classList.remove("showcase__text-tree--animation")
+        
+    })
+ }
 
 

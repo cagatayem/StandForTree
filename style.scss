@@ -146,6 +146,40 @@
         align-items: center;
         width: 100%;
     }
+
+    //SLIDE-2
+
+    &__row{
+        padding: 0.3rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      
+    }
+
+    &__text{
+        flex-basis: 45%;
+        padding: 1rem;
+        text-align: center;
+
+        &-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+        &-tree{
+            width: 3rem;
+            &--animation{
+                -webkit-animation: rotate 4s; /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: rotate 4s; /* Firefox < 16 */
+                -ms-animation: rotate 4s; /* Internet Explorer */
+                -o-animation: rotate 4s; /* Opera < 12.1 */
+                animation: rotate 4s;
+            }
+        }
+    }
 }
 
 .question{
@@ -174,4 +208,12 @@
     font-size: 1.5rem;
     display: none; 
 
+}
+
+// Animation tree
+@keyframes rotate{
+    to {
+        transform: rotate(360deg);
+      }
+    
 }

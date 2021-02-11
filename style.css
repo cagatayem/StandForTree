@@ -97,6 +97,33 @@
     flex-direction: column;
     align-items: center;
     width: 100%; }
+  .showcase__row {
+    padding: 0.3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center; }
+  .showcase__text {
+    flex-basis: 45%;
+    padding: 1rem;
+    text-align: center; }
+    .showcase__text-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-self: center; }
+    .showcase__text-tree {
+      width: 3rem; }
+      .showcase__text-tree--animation {
+        -webkit-animation: rotate 4s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: rotate 4s;
+        /* Firefox < 16 */
+        -ms-animation: rotate 4s;
+        /* Internet Explorer */
+        -o-animation: rotate 4s;
+        /* Opera < 12.1 */
+        animation: rotate 4s; }
 
 .question {
   font-size: 1.5rem;
@@ -120,3 +147,7 @@
   margin-top: 1rem;
   font-size: 1.5rem;
   display: none; }
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg); } }
