@@ -22,7 +22,7 @@ body{
         box-shadow: 0 10px 30px -10px rgba(0,0,0,.6);
         z-index: 100;
         border-radius: 44px;
-     
+        
     }
 }
 
@@ -93,17 +93,24 @@ img{
 
 
 .swiper{
-
+   
     &-container{
         width: 100%;
         height: 80vh;    
-
+        touch-action: none;
     }
 
     &-scrollbar{
         display: none;
     }
 
+    &-button-prev,
+    &-button-next{
+        color: #000;
+    }
+    &-pagination-bullet{
+        background: #000;
+    }
   }
 
 
@@ -113,8 +120,7 @@ img{
     align-items: center;
     margin-bottom: 1rem;
     width: 100%;
-    height: 5rem;
-   
+    
     padding: 2rem 3rem;
     color: #fff;
     &__text{
@@ -189,7 +195,7 @@ img{
 
     //SLIDE-3
     &__block{
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         display: flex;
         padding: 1rem;
         width: 100%;
@@ -197,12 +203,13 @@ img{
 
         &-image{
             width: 15rem;
-           
+            border: 0.4rem solid #7a1f1f;
         }
         &-paragraph{
             padding: 1rem;
             text-align: left;
             width: 70%;
+            font-size: 1.1rem;
 
             &--second{
                 text-align: right;
@@ -248,4 +255,81 @@ img{
         transform: rotate(360deg);
       }
     
+}
+
+//Responsive 
+
+@media screen and (max-width:768px){
+
+    .main__square{
+        min-height: 95vh;
+        width: 80%;
+    }
+    .swiper-container{
+        height: 96vh;
+    }
+
+    .header{
+        height: 0rem;
+        padding: 1.4rem 3rem;
+        &__text{
+            font-size: 1.3rem;
+
+        &--height{
+            font-size: 1rem;
+            text-align: center;
+        }
+        }
+    }
+    
+    .showcase{
+        padding: 0rem 1.3rem;
+        &__questions{
+            flex-direction: column;
+            margin-top: 0.5rem;
+            padding: 0rem;
+
+        }
+
+
+        &__question{
+            padding: 0.4rem;
+
+        }
+
+        &__paragraph{
+            font-size: 1rem;
+    
+        }
+        //SLIDE-2
+        &__row{
+            padding: 0rem;
+        }
+
+        &__text{
+            padding: 0.1rem;
+
+            &-tree{
+                width: 2rem;
+            }
+            &-header{
+                font-size: 1rem;
+            }
+        }
+    
+
+    }
+    .question{
+        
+        padding: 0.4rem;
+        height: 125px;
+        width: 125px;
+        font-size: 1rem;
+    }
+    .answer{
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+
 }

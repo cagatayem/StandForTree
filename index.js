@@ -1,5 +1,5 @@
 var mySwiper = new Swiper('.swiper-container', {
-   
+   speed:1000,
  
     // If we need pagination
     pagination: {

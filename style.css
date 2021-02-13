@@ -64,10 +64,17 @@ img {
 
 .swiper-container {
   width: 100%;
-  height: 80vh; }
+  height: 80vh;
+  touch-action: none; }
 
 .swiper-scrollbar {
   display: none; }
+
+.swiper-button-prev, .swiper-button-next {
+  color: #000; }
+
+.swiper-pagination-bullet {
+  background: #000; }
 
 .header {
   display: flex;
@@ -75,7 +82,6 @@ img {
   align-items: center;
   margin-bottom: 1rem;
   width: 100%;
-  height: 5rem;
   padding: 2rem 3rem;
   color: #fff; }
   .header__text {
@@ -131,17 +137,19 @@ img {
         /* Opera < 12.1 */
         animation: rotate 4s; }
   .showcase__block {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
     padding: 1rem;
     width: 100%;
     justify-content: center; }
     .showcase__block-image {
-      width: 15rem; }
+      width: 15rem;
+      border: 0.4rem solid #7a1f1f; }
     .showcase__block-paragraph {
       padding: 1rem;
       text-align: left;
-      width: 70%; }
+      width: 70%;
+      font-size: 1.1rem; }
       .showcase__block-paragraph--second {
         text-align: right;
         width: 70%; }
@@ -172,3 +180,44 @@ img {
 @keyframes rotate {
   to {
     transform: rotate(360deg); } }
+
+@media screen and (max-width: 768px) {
+  .main__square {
+    min-height: 95vh;
+    width: 80%; }
+  .swiper-container {
+    height: 96vh; }
+  .header {
+    height: 0rem;
+    padding: 1.4rem 3rem; }
+    .header__text {
+      font-size: 1.3rem; }
+      .header__text--height {
+        font-size: 1rem;
+        text-align: center; }
+  .showcase {
+    padding: 0rem 1.3rem; }
+    .showcase__questions {
+      flex-direction: column;
+      margin-top: 0.5rem;
+      padding: 0rem; }
+    .showcase__question {
+      padding: 0.4rem; }
+    .showcase__paragraph {
+      font-size: 1rem; }
+    .showcase__row {
+      padding: 0rem; }
+    .showcase__text {
+      padding: 0.1rem; }
+      .showcase__text-tree {
+        width: 2rem; }
+      .showcase__text-header {
+        font-size: 1rem; }
+  .question {
+    padding: 0.4rem;
+    height: 125px;
+    width: 125px;
+    font-size: 1rem; }
+  .answer {
+    font-size: 1rem;
+    margin-top: 0.2rem; } }
