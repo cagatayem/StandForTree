@@ -6,6 +6,7 @@
 
 body{
      font-family: 'Lato', sans-serif;
+     overflow-y: scroll;
 }
 .main{
     background-color: #7ee8fa;
@@ -16,7 +17,7 @@ body{
     align-items: center;
 
     &__square{
-        min-height: 80vh;
+        height: 70vh;
         width: 70%;
         background:linear-gradient(to left bottom,rgba(255,255,250,0.5), rgba(255,255,255,0.4));
         box-shadow: 0 10px 30px -10px rgba(0,0,0,.6);
@@ -96,7 +97,7 @@ img{
    
     &-container{
         width: 100%;
-        height: 80vh;    
+        height: 80%;    
         touch-action: none;
     }
 
@@ -358,6 +359,11 @@ img{
         font-size: 1rem;
         margin-top: 0.2rem;
     }
+
+
+}
+
+@media screen and (max-width:512px){
 
 
 }
