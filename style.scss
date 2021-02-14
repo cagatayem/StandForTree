@@ -303,20 +303,48 @@ img{
         }
         //SLIDE-2
         &__row{
-            padding: 0rem;
+            margin-top:1rem;
         }
 
         &__text{
             padding: 0.1rem;
-
             &-tree{
                 width: 2rem;
             }
             &-header{
                 font-size: 1rem;
+                text-align: left;
             }
         }
+        
+        //SLIDE-3
+
+        &__block{
+            flex-direction:row;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 0.2rem;
+            padding: 1rem;
+            &-image{
+                width: 8rem;
+                height:8rem;
+                border: 0.1rem solid #7a1f1f;
+                margin:0.3rem
+            }
+            &-paragraph{
+                padding: 0.2rem;
+                text-align: left;
+                width: 90%;
+                font-size: 0.8rem;
     
+                &--second{
+                    text-align: right;
+                    width: 90%;
+                }
+            }
+
+        }
 
     }
     .question{

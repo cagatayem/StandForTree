@@ -206,13 +206,34 @@ img {
     .showcase__paragraph {
       font-size: 1rem; }
     .showcase__row {
-      padding: 0rem; }
+      margin-top: 1rem; }
     .showcase__text {
       padding: 0.1rem; }
       .showcase__text-tree {
         width: 2rem; }
       .showcase__text-header {
-        font-size: 1rem; }
+        font-size: 1rem;
+        text-align: left; }
+    .showcase__block {
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 0.2rem;
+      padding: 1rem; }
+      .showcase__block-image {
+        width: 8rem;
+        height: 8rem;
+        border: 0.1rem solid #7a1f1f;
+        margin: 0.3rem; }
+      .showcase__block-paragraph {
+        padding: 0.2rem;
+        text-align: left;
+        width: 90%;
+        font-size: 0.8rem; }
+        .showcase__block-paragraph--second {
+          text-align: right;
+          width: 90%; }
   .question {
     padding: 0.4rem;
     height: 125px;
