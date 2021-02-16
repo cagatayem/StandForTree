@@ -18,7 +18,7 @@ body{
     align-items: center;
     
     &__square{
-        height: 85%;
+        
         width: 70%;
         background:linear-gradient(to left bottom,rgba(255,255,250,0.5), rgba(255,255,255,0.4));
         box-shadow: 0 10px 30px -10px rgba(0,0,0,.6);
@@ -94,7 +94,7 @@ img{
    
     &-container{
         width: 100%;
-        height: 100%;    
+        
         
     }
 
@@ -258,19 +258,24 @@ img{
 //Responsive 
 
 @media screen and (max-width:768px){
-   
+    .main{
+        min-height: 120vh;
+    }
 
     .main__square{
-        min-height: 120vh;
+       min-height: 120vh;
         width: 85%;
         margin: 1rem;
         -ms-touch-action: auto;
         touch-action: auto;
     }
-    .swiper-container{
-        height: 120vh; 
-        -ms-touch-action: auto;
-        touch-action: auto;
+    .swiper{
+    
+        &-container{
+            min-height: 120vh;
+            
+            
+        }
     }
     
 
@@ -337,18 +342,25 @@ img{
             text-align: center;
             align-items: center;
             width: 100%;
-            margin: 0rem;
+            margin: 1rem 0rem;
             padding: 0 1.2rem;
-
+            
             &--first{
                 margin-top: 1rem;
+            }
+
+            &--second{
+              margin-bottom: 2rem;
             }
 
             &-image{
                 width: 8rem;
                 height:8rem;
                 border: 0.1rem solid #7a1f1f;
-                margin:0.3rem;
+                margin-bottom: 0.4rem;
+                &--second{
+                    margin-top:0.5rem
+                }
                 
             }
             &-paragraph{
