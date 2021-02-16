@@ -224,7 +224,7 @@ img {
         width: 2rem; }
       .showcase__text-header {
         font-size: 1rem;
-        text-align: left; }
+        text-align: center; }
     .showcase__block {
       flex-direction: column;
       text-align: center;
