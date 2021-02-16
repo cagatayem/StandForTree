@@ -1,11 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  overflow-y: scroll; }
+  font-family: 'Lato', sans-serif; }
 
 .main {
   background-color: #7ee8fa;
@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: center; }
   .main__square {
-    height: 70vh;
+    height: 85%;
     width: 70%;
     background: linear-gradient(to left bottom, rgba(255, 255, 250, 0.5), rgba(255, 255, 255, 0.4));
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
@@ -65,8 +65,7 @@ img {
 
 .swiper-container {
   width: 100%;
-  height: 80%;
-  touch-action: none; }
+  height: 100%; }
 
 .swiper-scrollbar {
   display: none; }
@@ -184,44 +183,55 @@ img {
 
 @media screen and (max-width: 768px) {
   .main__square {
-    min-height: 95vh;
-    width: 80%; }
+    height: 110vh;
+    width: 85%;
+    margin: 1rem;
+    overflow: scroll; }
   .swiper-container {
-    height: 96vh; }
+    height: 100%;
+    overflow-y: scroll; }
   .header {
     height: 0rem;
-    padding: 1.4rem 3rem; }
+    padding: 2rem 3rem; }
     .header__text {
-      font-size: 1.3rem; }
+      font-size: 1.5rem; }
       .header__text--height {
-        font-size: 1rem;
+        font-size: 1.3rem;
         text-align: center; }
   .showcase {
     padding: 0rem 1.3rem; }
     .showcase__questions {
       flex-direction: column;
-      margin-top: 0.5rem;
+      margin-top: 3rem;
       padding: 0rem; }
     .showcase__question {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      margin-top: 0.1rem;
+      cursor: pointer; }
     .showcase__paragraph {
-      font-size: 1rem; }
+      font-size: 1.2rem; }
     .showcase__row {
-      margin-top: 1rem; }
+      margin-top: 2rem;
+      flex-direction: column; }
+      .showcase__row--second {
+        margin-top: 0; }
     .showcase__text {
-      padding: 0.1rem; }
+      padding: 0.3rem;
+      margin-top: 0.4rem; }
       .showcase__text-tree {
         width: 2rem; }
       .showcase__text-header {
         font-size: 1rem;
         text-align: left; }
     .showcase__block {
-      flex-direction: row;
+      flex-direction: column;
       text-align: center;
       align-items: center;
       width: 100%;
-      margin-top: 0.2rem;
-      padding: 1rem; }
+      margin: 0rem;
+      padding: 0rem; }
+      .showcase__block--first {
+        margin-top: 1rem; }
       .showcase__block-image {
         width: 8rem;
         height: 8rem;
@@ -231,14 +241,14 @@ img {
         padding: 0.2rem;
         text-align: left;
         width: 90%;
-        font-size: 0.8rem; }
+        font-size: 0.9rem; }
         .showcase__block-paragraph--second {
-          text-align: right;
+          text-align: left;
           width: 90%; }
   .question {
-    padding: 0.4rem;
-    height: 125px;
-    width: 125px;
+    padding: 0.5rem;
+    height: 130px;
+    width: 130px;
     font-size: 1rem; }
   .answer {
     font-size: 1rem;

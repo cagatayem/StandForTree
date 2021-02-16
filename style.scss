@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
 }
 
 body{
      font-family: 'Lato', sans-serif;
-     overflow-y: scroll;
 }
+
 .main{
     background-color: #7ee8fa;
     background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
@@ -15,21 +16,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     &__square{
-        height: 70vh;
+        height: 85%;
         width: 70%;
         background:linear-gradient(to left bottom,rgba(255,255,250,0.5), rgba(255,255,255,0.4));
         box-shadow: 0 10px 30px -10px rgba(0,0,0,.6);
         z-index: 100;
         border-radius: 44px;
-        
     }
 }
 
 img{
     width: 100%;
 }
+
 .images{
     display:flex;
     align-items: center;
@@ -37,7 +38,6 @@ img{
     position: absolute;
     top:-60px;
     width: 100%;
-
 
     &__leaf{
         width: 50px;
@@ -65,8 +65,6 @@ img{
             animation-delay: 5.4s;
         }
     }
-
-   
 }
 
 
@@ -74,7 +72,6 @@ img{
     0%{
         transform: translateY(0vh);
         opacity: 1;
-
     }
 
     50%{
@@ -97,8 +94,8 @@ img{
    
     &-container{
         width: 100%;
-        height: 80%;    
-        touch-action: none;
+        height: 100%;    
+        
     }
 
     &-scrollbar{
@@ -263,22 +260,27 @@ img{
 @media screen and (max-width:768px){
 
     .main__square{
-        min-height: 95vh;
-        width: 80%;
+        height: 110vh;
+        width: 85%;
+        margin: 1rem;
+        overflow:scroll;
     }
     .swiper-container{
-        height: 96vh;
+        height: 100%;
+        overflow-y: scroll
     }
+    
 
     .header{
         height: 0rem;
-        padding: 1.4rem 3rem;
+        padding:2rem 3rem;
+        
         &__text{
-            font-size: 1.3rem;
+            font-size: 1.5rem;
 
         &--height{
-            font-size: 1rem;
-            text-align: center;
+            font-size: 1.3rem;
+            text-align:center;
         }
         }
     }
@@ -287,28 +289,34 @@ img{
         padding: 0rem 1.3rem;
         &__questions{
             flex-direction: column;
-            margin-top: 0.5rem;
+            margin-top: 3rem;
             padding: 0rem;
 
         }
 
-
         &__question{
             padding: 0.4rem;
-
+            margin-top: 0.1rem;
+            cursor: pointer;
         }
 
         &__paragraph{
-            font-size: 1rem;
+            font-size: 1.2rem;
     
         }
         //SLIDE-2
         &__row{
-            margin-top:1rem;
+            margin-top:2rem;
+            flex-direction: column;
+            &--second{
+                margin-top: 0;
+            }
         }
 
         &__text{
-            padding: 0.1rem;
+            padding: 0.3rem;
+            margin-top: 0.4rem;
+
             &-tree{
                 width: 2rem;
             }
@@ -321,26 +329,32 @@ img{
         //SLIDE-3
 
         &__block{
-            flex-direction:row;
+            flex-direction:column;
             text-align: center;
             align-items: center;
             width: 100%;
-            margin-top: 0.2rem;
-            padding: 1rem;
+            margin: 0rem;
+            padding: 0rem;
+
+            &--first{
+                margin-top: 1rem;
+            }
+
             &-image{
                 width: 8rem;
                 height:8rem;
                 border: 0.1rem solid #7a1f1f;
-                margin:0.3rem
+                margin:0.3rem;
+                
             }
             &-paragraph{
                 padding: 0.2rem;
                 text-align: left;
                 width: 90%;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
     
                 &--second{
-                    text-align: right;
+                    text-align: left;
                     width: 90%;
                 }
             }
@@ -350,9 +364,9 @@ img{
     }
     .question{
         
-        padding: 0.4rem;
-        height: 125px;
-        width: 125px;
+        padding: 0.5rem;
+        height: 130px;
+        width: 130px;
         font-size: 1rem;
     }
     .answer{
