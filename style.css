@@ -183,13 +183,11 @@ img {
 
 @media screen and (max-width: 768px) {
   .main__square {
-    height: 110vh;
+    min-height: 110vh;
     width: 85%;
-    margin: 1rem;
-    overflow: scroll; }
+    margin: 1rem; }
   .swiper-container {
-    height: 100%;
-    overflow-y: scroll; }
+    height: 100%; }
   .header {
     height: 0rem;
     padding: 2rem 3rem; }

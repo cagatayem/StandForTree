@@ -258,16 +258,17 @@ img{
 //Responsive 
 
 @media screen and (max-width:768px){
+   
 
     .main__square{
-        height: 110vh;
+        min-height: 110vh;
         width: 85%;
         margin: 1rem;
-        overflow:scroll;
+        
     }
     .swiper-container{
         height: 100%;
-        overflow-y: scroll
+      
     }
     
 
