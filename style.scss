@@ -394,6 +394,34 @@ img{
 }
 
 @media screen and (max-width:512px){
+    .showcase{
+        padding: 0rem 1.3rem;
+    
+        &__question{
+            padding: 0.5rem;
+            margin-top: 0.5 rem;
+            
+        }
 
+        &__paragraph{
+            font-size: 1.2rem;
+    
+        }
+        //SLIDE-2
+        &__row{
+            
+            padding: 0rem 1rem;
+           
+        }
 
+        //SLIDE-3
+
+        &__block{
+            &-paragraph{
+                text-align: center;
+                
+                
+            }
+        }
+    }
 }

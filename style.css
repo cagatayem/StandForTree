@@ -259,3 +259,16 @@ img {
   .answer {
     font-size: 1rem;
     margin-top: 0.2rem; } }
+
+@media screen and (max-width: 512px) {
+  .showcase {
+    padding: 0rem 1.3rem; }
+    .showcase__question {
+      padding: 0.5rem;
+      margin-top: 0.5 rem; }
+    .showcase__paragraph {
+      font-size: 1.2rem; }
+    .showcase__row {
+      padding: 0rem 1rem; }
+    .showcase__block-paragraph {
+      text-align: center; } }
