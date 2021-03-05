@@ -1,6 +1,6 @@
 # StandForTree
 
-This is my own project.
+This is my own project designed for fun :smile:
 
 You can visit the website https://stand-for-tree.vercel.app/
 
